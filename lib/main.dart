@@ -1,13 +1,14 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   return runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
+          centerTitle: true,
           title: Text('Dicee'),
           backgroundColor: Colors.red,
         ),
@@ -38,7 +39,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: _getDiceNumber,
               child: Image.asset(
-                'images/dint$leftDiceNumber.png',
+                'images/dice$leftDiceNumber.png',
               ),
             ),
           ),
